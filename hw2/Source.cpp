@@ -1,13 +1,13 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 
-int sum(int * a, int size)
+int sum(int* a, int size)
 {
-    int x = 0;
-    for (int i = 0; i < size; i++)
-        x += *(a+i);
-    return x;
+	int x = 0;
+	for (int i = 0; i < size; i++)
+		x += *(a + i);
+	return x;
 }
 
 
@@ -15,15 +15,15 @@ void second_task()
 {
 	setlocale(LC_ALL, "Russian");
 	int n;
-	cout << "ââåäèòå êîëè÷åñòâî ýëåìåíòîâ ìàññèâà:";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ: ";
 	cin >> n;
 	int* x = new int[n];
 	int* sum = new int[n * 2];
 
-	cout << "ââåäèòå ýëåìåíò ìàññèâà: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 	for (int i = 0; i < n; i++)
 	{
-				cin >> *(x + i);
+		cin >> *(x + i);
 	}
 
 	for (int i = 0; i < n; i++)
@@ -33,10 +33,10 @@ void second_task()
 
 	int* y = new int[n];
 
-	cout << "ââåäèòå ýëåìåíò ìàññèâà: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 	for (int i = 0; i < n; i++)
 	{
-				cin >> *(y + i);
+		cin >> *(y + i);
 	}
 
 
@@ -53,14 +53,14 @@ void second_task()
 
 void sort(int* a, int size)
 {
-	for (int i = 0; i < size - 1; i++) 
+	for (int i = 0; i < size - 1; i++)
 	{
 		for (int j = 0; j < size - i - 1; j++)
 		{
-			if (*(a+j) > *(a+j+1))
+			if (*(a + j) > *(a + j + 1))
 			{
-				int val = *(a + j) ;
-				*(a + j) = *(a + j  +1);
+				int val = *(a + j);
+				*(a + j) = *(a + j + 1);
 				*(a + j + 1) = val;
 			}
 		}
@@ -71,11 +71,10 @@ void sort(int* a, int size)
 
 int main()
 {
-    int m[5] = { 5, 4, 1, 2, 0 };
-    cout << sum(m, 5) << "\n";
-    second_task();
+	int m[5] = { 5, 4, 1, 2, 0 };
+	cout << sum(m, 5) << "\n";
+	second_task();
 	cout << "\n";
 	sort(m, 5);
-    return 0;
+	return 0;
 }
-
