@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/grigoriy/univer/BelovG-11-008/sem2/heap_sort/heap_sort.cpp
+iostream
+-
+fstream
+-
+ctime
+-
+
