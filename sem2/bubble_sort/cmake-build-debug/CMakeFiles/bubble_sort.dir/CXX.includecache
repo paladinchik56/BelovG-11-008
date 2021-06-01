@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/grigoriy/univer/BelovG-11-008/sem2/bubble_sort/bubble_sort.cpp
+iostream
+-
+string
+-
+fstream
+-
+ctime
+-
+
